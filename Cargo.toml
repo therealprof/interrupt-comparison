@@ -1,0 +1,25 @@
+[package]
+authors = ["Daniel Egger <daniel@eggers-club.de>"]
+categories = ["embedded", "no-std"]
+description = "Comparison of various interrupt handling methods on a Nucleo-F072RB board"
+edition = "2018"
+keywords = ["arm", "cortex-m", "template"]
+license = "0BSD"
+name = "interrupt-comparison"
+repository = "https://github.com/therealprof/interrupt-comparison"
+version = "0.1.0"
+readme = "README.md"
+
+[workspace]
+members = ["flashing"]
+
+[profile]
+[profile.dev]
+debug = true
+lto = true
+
+[profile.release]
+debug = true
+lto = true
+opt-level = "s"
+

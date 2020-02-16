@@ -1,0 +1,27 @@
+[package]
+authors = ["Daniel Egger <daniel@eggers-club.de>"]
+categories = ["embedded", "no-std"]
+description = "Simple LED flasher"
+edition = "2018"
+keywords = ["arm", "cortex-m", "template"]
+license = "0BSD"
+name = "flashing"
+version = "0.1.0"
+readme = "README.md"
+
+[dev-dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2.3"
+
+[dependencies.stm32f0xx-hal]
+features = ["stm32f072", "rt"]
+version = "0.16.0"
+
+[dev-dependencies]
+nb = "0.1.2"
+panic-halt = "0.2.0"
+bare-metal = "0.2.5"
+cortex-m = "0.6.2"
+cortex-m-rt = "0.6.12"
+irq = "0.2.1"
+cortex-m-rtfm = "0.5.1"
